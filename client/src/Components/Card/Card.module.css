@@ -1,0 +1,135 @@
+.cardContainer {
+  display: flex;
+  width: 90%;
+  height: 200px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  border: 2px solid transparent;
+  transition: all 0.2s ease-out;
+  margin: auto;
+}
+
+.cardContainer:hover {
+  border: 2px solid var(--color-hover);
+}
+
+.imgContainer {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainer img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.contentContainer {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--pd-2);
+}
+
+.contentContainer h4 {
+  padding-bottom: 5px;
+}
+
+.contentTop {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 5px;
+}
+
+.contentTopTitle {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.title span {
+  color: var(--color-text-secondary);
+  background-color: var(--color-background-off-two);
+  padding: 3px 7px;
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.contentTopPrice {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contentTopText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentTopText p {
+  padding-right: 10px;
+}
+
+.contentTopDetail {
+  font-size: 12px;
+  color: var(--color-text-off);
+  font-weight: bold;
+}
+
+.contentBottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.priceWhitOutDiscount {
+  font-size: 12px;
+  color: var(--color-text-off);
+  text-decoration: line-through;
+  display: flex;
+  justify-content: center;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ratingContainer div {
+  display: flex;
+  align-items: center;
+}
+
+.ratingContainer svg {
+  width: 14px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+}
